@@ -76,5 +76,5 @@ class ContactController extends Controller {
         if ($result) {
             return header('Location: /ges_contact_simplon/admin/contacts');
         }
-    }
+    } 
 }
