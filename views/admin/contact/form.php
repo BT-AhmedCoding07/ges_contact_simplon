@@ -1,6 +1,6 @@
 <h1><?= $params['contact']->nom ?? 'Créer un nouvel contact' ?></h1>
 
-<form action="<?= isset($params['contact']) ? "/admin/posts/edit/{$params['contact']->id}" : "/admin/posts/create" ?>" method="POST">
+<form action="<?= isset($params['contact']) ? "/ges_contact_simplon/admin/contacts/edit/{$params['contact']->id}" : "/ges_contact_simplon/admin/contacts/create" ?>" method="POST">
     <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" class="form-control" name="nom" id="nom" value="<?= $params['contact']->nom ?? '' ?>">

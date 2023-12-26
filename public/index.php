@@ -28,10 +28,10 @@ $router->get('/types/:id', 'App\Controllers\ContactController@type'); //je rempl
 
 $router->get('/admin/contacts', 'App\Controllers\Admin\ContactController@index');
 $router->get('/admin/contacts/create', 'App\Controllers\Admin\ContactController@create');
-$router->post('/ges_contact_simplon/admin/contacts/create', 'App\Controllers\Admin\ContactControllerr@createContact');
+$router->post('/admin/contacts/create', 'App\Controllers\Admin\ContactControllerr@createContact');
 $router->post('/admin/contacts/delete/:id', 'App\Controllers\Admin\ContactController@destroy');
 $router->get('/admin/contacts/edit/:id', 'App\Controllers\Admin\ContactController@edit');
-$router->post('/ges_contact_simplon/admin/contacts/edit/:id', 'App\Controllers\Admin\ContactController@update');
+$router->post('/admin/contacts/edit/:id', 'App\Controllers\Admin\ContactController@update');
 
 try {
     $router->run();
